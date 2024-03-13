@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"log"
 	"net/http"
+	"pycoala/pycoala/utils/helpers"
 	"regexp"
 	"slices"
-	"smudgelord/smudgelord/utils/helpers"
 
 	"github.com/mymmrac/telego/telegoutil"
 )

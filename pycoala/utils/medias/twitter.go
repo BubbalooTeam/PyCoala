@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
+	"pycoala/pycoala/utils/helpers"
 	"regexp"
 	"slices"
-	"smudgelord/smudgelord/utils/helpers"
 	"sort"
 	"strings"
 

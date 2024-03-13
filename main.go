@@ -5,10 +5,10 @@ import (
 	"log"
 	"os"
 	"os/signal"
-	"smudgelord/smudgelord"
-	"smudgelord/smudgelord/config"
-	"smudgelord/smudgelord/database"
-	"smudgelord/smudgelord/localization"
+	"pycoala/pycoala"
+	"pycoala/pycoala/config"
+	"pycoala/pycoala/database"
+	"pycoala/pycoala/localization"
 	"syscall"
 
 	"github.com/fasthttp/router"
@@ -71,7 +71,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	handler := smudgelord.NewHandler(bot, bh)
+	handler := pycoala.NewHandler(bot, bh)
 	handler.RegisterHandlers()
 
 	// Call method getMe

@@ -29,7 +29,7 @@ func init() {
 
 	DatabaseFile = os.Getenv("DATABASE_FILE")
 	if DatabaseFile == "" {
-		DatabaseFile = filepath.Join(".", "smudgelord", "database", "database.sql")
+		DatabaseFile = filepath.Join(".", "pycoala", "database", "database.sql")
 	}
 
 	WebhookURL = os.Getenv("WEBHOOK_URL")

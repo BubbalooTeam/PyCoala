@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
+	"pycoala/pycoala/utils/helpers"
 	"regexp"
-	"smudgelord/smudgelord/utils/helpers"
 	"strings"
 
 	"github.com/mymmrac/telego/telegoutil"

@@ -1,8 +1,8 @@
 package modules
 
 import (
+	"pycoala/pycoala/utils/medias"
 	"regexp"
-	"smudgelord/smudgelord/utils/medias"
 
 	"github.com/mymmrac/telego"
 	"github.com/mymmrac/telego/telegoutil"

@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
-	"smudgelord/smudgelord/database"
+	"pycoala/pycoala/database"
 	"strings"
 	"time"
 

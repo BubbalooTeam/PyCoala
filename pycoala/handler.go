@@ -1,9 +1,9 @@
-package smudgelord
+package pycoala
 
 import (
+	"pycoala/pycoala/database"
+	"pycoala/pycoala/modules"
 	"regexp"
-	"smudgelord/smudgelord/database"
-	"smudgelord/smudgelord/modules"
 
 	"github.com/mymmrac/telego"
 	th "github.com/mymmrac/telego/telegohandler"
@@ -26,6 +26,8 @@ func (h *Handler) RegisterHandlers() {
 	h.bh.Use(modules.CheckAFK)
 	h.bh.HandleMessage(modules.SetAFK, th.CommandEqual("afk"))
 	h.bh.HandleMessage(modules.SetAFK, th.TextMatches(regexp.MustCompile(`^(?:brb)(\s.+)?`)))
+	h.bh.Handle(modules.PingModule, th.CommandEqual("ping"))
 	h.bh.HandleMessage(modules.MediaDownloader, th.TextMatches(regexp.MustCompile(`(?:htt.*?//)?(:?.*)?(?:instagram|twitter|x|tiktok|threads)\.(?:com|net)\/(?:\S*)`)))
+	h.bh.Handle(modules.WeatherModule, th.CommandEqual("weather"))
 	h.bh.Handle(modules.Start, th.CommandEqual("start"))
 }

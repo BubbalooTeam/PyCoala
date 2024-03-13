@@ -3,7 +3,7 @@ package modules
 import (
 	"fmt"
 	"log"
-	"smudgelord/smudgelord/localization"
+	"pycoala/pycoala/localization"
 	"strings"
 
 	"github.com/mymmrac/telego"

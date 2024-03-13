@@ -3,9 +3,9 @@ package modules
 import (
 	"fmt"
 	"log"
+	"pycoala/pycoala/database"
+	"pycoala/pycoala/localization"
 	"regexp"
-	"smudgelord/smudgelord/database"
-	"smudgelord/smudgelord/localization"
 	"strings"
 	"time"
 

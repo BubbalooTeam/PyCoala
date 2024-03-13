@@ -2,6 +2,9 @@
     "start_message_private": "Olá <b>%s</b> — Sou <b>%s</b>, um bot com alguns comandos úteis e divertidos para você.\n\n<b>Código Fonte:</b> <a href='github.com/BubbalooTeam/PyCoala'>GitHub</a>",
     "start_message_group": "Olá, sou o <b>%s</b>\nTenho varias funções, para saber mais, clique no botão abaixo e inicie uma conversa comigo.",
     "start_button": "Iniciar uma conversa",
+    "bot-utils": {
+        "errors": "<b>Unable to %s:</b> <code>%s</code>"
+    },
     "btns": {
         "help-btn": "❔ Ajuda"
     },
@@ -10,6 +13,13 @@
         "unavailable": "<b><a href='tg://user?id=%s'>%s</a></b> está <b>indisponível!</b>\nVisto pela última vez à <code>%s</code> atrás",
         "reason": "\n<b>Motivo:</b> <code>%s</code>",
         "now-available": "<b><a href='tg://user?id=%s'>%s</a></b> está de volta após <code>%s</code> de ausência!"
+    },
+    "weather": {
+        "no-location": "<b>Please provide a location to get the weather.</b>",
+        "no-valid-location": "<b>Location not found!</b>",
+        "lang": "pt",
+        "unit": "m",
+        "result": "<b>%s</b>:\n\n<b><i>📍 Location Info:</i></b>\n<b>Latitude:</b> <code>%.3f</code>\n<b>Longitude:</b> <code>%.3f</code>\n\n<b><i>%s Weather — %s:</i></b>\n<b>Temperature:</b> <code>%.0f °C</code>\n<b>Thermal sensation:</b> <code>%.0f °C</code>\n<b>Air umidity:</b> <code>%.0f %%</code>\n<b>Wind:</b> <code>%.0f km/h</code>"
     },
     "relativeDuration": {
         "singular": {

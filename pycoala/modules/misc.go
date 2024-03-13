@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
+	"pycoala/pycoala/localization"
 	bothttp "pycoala/pycoala/utils/helpers"
 
 	"github.com/mymmrac/telego"
@@ -74,11 +75,12 @@ func getStatusEmoji(statusCode int) string {
 func WeatherModule(bot *telego.Bot, update telego.Update) {
 	chatID := telegoutil.ID(update.Message.Chat.ID)
 	args := update.Message.Text
+	i18n := localization.Get(update.Message.Chat)
 
 	if len(args) < 9 {
 		bot.SendMessage(&telego.SendMessageParams{
 			ChatID:    chatID,
-			Text:      "<b>Please provide a location to get the weather.</b>",
+			Text:      i18n("weather.no-location"),
 			ParseMode: "HTML",
 		})
 		return
@@ -90,7 +92,7 @@ func WeatherModule(bot *telego.Bot, update telego.Update) {
 		Query: map[string]string{
 			"apiKey":   "8de2d8b3a93542c9a2d8b3a935a2c909",
 			"format":   "json",
-			"language": "en",
+			"language": i18n("weather.lang"),
 			"query":    location,
 		},
 	}
@@ -104,7 +106,7 @@ func WeatherModule(bot *telego.Bot, update telego.Update) {
 		log.Println("Error decoding JSON in WeatherModule:", err_Location)
 		bot.SendMessage(&telego.SendMessageParams{
 			ChatID:    chatID,
-			Text:      "<b>Sorry, there was an error retrieving weather information.</b>",
+			Text:      fmt.Sprintf(i18n("bot-utils.errors"), "WeatherModuleRunner", err_Location),
 			ParseMode: "HTML",
 		})
 		return
@@ -125,9 +127,9 @@ func WeatherModule(bot *telego.Bot, update telego.Update) {
 						Query: map[string]string{
 							"apiKey":   "8de2d8b3a93542c9a2d8b3a935a2c909",
 							"format":   "json",
-							"language": "en",
+							"language": i18n("weather.lang"),
 							"geocode":  fmt.Sprintf("%.3f,%.3f", latFirst, lonFirst),
-							"units":    "m",
+							"units":    i18n("weather.unit"),
 						},
 					}
 
@@ -141,7 +143,7 @@ func WeatherModule(bot *telego.Bot, update telego.Update) {
 						log.Println("Error decoding JSON in WeatherModule:", err_Weather)
 						bot.SendMessage(&telego.SendMessageParams{
 							ChatID:    chatID,
-							Text:      "<b>Sorry, there was an error retrieving weather information.</b>",
+							Text:      fmt.Sprintf(i18n("bot-utils.errors"), "WeatherModuleRunner", err_Weather),
 							ParseMode: "HTML",
 						})
 						return
@@ -156,7 +158,7 @@ func WeatherModule(bot *telego.Bot, update telego.Update) {
 						intCode := int(iconCode.(float64))
 						bot.SendMessage(&telego.SendMessageParams{
 							ChatID: chatID,
-							Text: fmt.Sprintf("<b>%s</b>:\n\n<b><i>📍 Location Info:</i></b>\n<b>Latitude:</b> <code>%.3f</code>\n<b>Longitude:</b> <code>%.3f</code>\n\n<b><i>%s Weather — %s:</i></b>\n<b>Temperature:</b> <code>%.0f °C</code>\n<b>Thermal sensation:</b> <code>%.0f °C</code>\n<b>Air umidity:</b> <code>%.0f %%</code>\n<b>Wind:</b> <code>%.0f km/h</code>",
+							Text: fmt.Sprintf(i18n("weather.result"),
 								addressFirst, latFirst, lonFirst, getStatusEmoji(intCode), weatherType, temperature, feelsLike, airHumidity, windSpeed),
 							ParseMode: "HTML",
 						})
@@ -167,7 +169,7 @@ func WeatherModule(bot *telego.Bot, update telego.Update) {
 		} else {
 			bot.SendMessage(&telego.SendMessageParams{
 				ChatID:    chatID,
-				Text:      "<b>Sorry, there was an error retrieving weather information.</b>",
+				Text:      fmt.Sprintf(i18n("bot-utils.errors"), "WeatherModuleRunner", "I was hoping for an API weather-location parameter, but nothing is available in this case."),
 				ParseMode: "HTML",
 			})
 			return
@@ -175,7 +177,7 @@ func WeatherModule(bot *telego.Bot, update telego.Update) {
 	} else {
 		bot.SendMessage(&telego.SendMessageParams{
 			ChatID:    chatID,
-			Text:      "<b>Location not found!</b>",
+			Text:      i18n("weather.no-valid-location"),
 			ParseMode: "HTML",
 		})
 		return

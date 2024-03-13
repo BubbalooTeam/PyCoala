@@ -1,0 +1,3 @@
+files:
+  - source: /locales/en-us.json
+    translation: /locales/%locale_with_underscore%.json

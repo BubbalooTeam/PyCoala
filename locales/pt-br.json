@@ -1,42 +1,42 @@
 {
-    "start_message_private": "Olá <b>%s</b> — Sou <b>%s</b>, um bot com alguns comandos úteis e divertidos para você.\n\n<b>Código Fonte:</b> <a href='github.com/BubbalooTeam/PyCoala'>GitHub</a>",
-    "start_message_group": "Olá, sou o <b>%s</b>\nTenho varias funções, para saber mais, clique no botão abaixo e inicie uma conversa comigo.",
-    "start_button": "Iniciar uma conversa",
+    "start_message_private": "Hello <b>%s</b> — I'm <b>%s</b>, a bot with some useful and fun commands for you.\n\n<b>SourceCode:</b> <a href='github.com/BubbalooTeam/PyCoala'>GitHub</a>",
+    "start_message_group": "Hello, I'm <b>%s</b>\nI have a lot of cool features. To find out more, click on the button below and start a conversation with me.",
+    "start_button": "Start a chat",
     "bot-utils": {
         "errors": "<b>Unable to %s:</b> <code>%s</code>"
     },
     "btns": {
-        "help-btn": "❔ Ajuda"
+        "help-btn": "❔ Help"
     },
     "afk": {
-        "now-unavailable": "<b>%s</b> está agora indisponível!",
-        "unavailable": "<b><a href='tg://user?id=%s'>%s</a></b> está <b>indisponível!</b>\nVisto pela última vez à <code>%s</code> atrás",
-        "reason": "\n<b>Motivo:</b> <code>%s</code>",
-        "now-available": "<b><a href='tg://user?id=%s'>%s</a></b> está de volta após <code>%s</code> de ausência!"
+        "now-unavailable": "<b>%s</b> is now unavailable!",
+        "unavailable": "<b><a href='tg://user?id=%d'>%s</a></b> is <b>unavailable!</b>\nLast seen <code>%s</code> ago",
+        "reason": "\n<b>Reason:</b> %s",
+        "now-available": "<b><a href='tg://user?id=%d'>%s</a></b> is back after <code>%s</code> away."
     },
     "weather": {
         "no-location": "<b>Please provide a location to get the weather.</b>",
         "no-valid-location": "<b>Location not found!</b>",
-        "lang": "pt",
-        "unit": "m",
-        "result": "<b>%s</b>:\n\n<b><i>📍 Location Info:</i></b>\n<b>Latitude:</b> <code>%.3f</code>\n<b>Longitude:</b> <code>%.3f</code>\n\n<b><i>%s Weather — %s:</i></b>\n<b>Temperature:</b> <code>%.0f °C</code>\n<b>Thermal sensation:</b> <code>%.0f °C</code>\n<b>Air umidity:</b> <code>%.0f %%</code>\n<b>Wind:</b> <code>%.0f km/h</code>"
+        "lang": "en",
+        "unit": "e",
+        "result": "<b>%s</b>:\n\n<b><i>📍 Location Info:</i></b>\n<b>Latitude:</b> <code>%.3f</code>\n<b>Longitude:</b> <code>%.3f</code>\n\n<b><i>%s Weather — %s:</i></b>\n<b>Temperature:</b> <code>%.0f °F</code>\n<b>Thermal sensation:</b> <code>%.0f °F</code>\n<b>Air umidity:</b> <code>%.0f %%</code>\n<b>Wind:</b> <code>%.0f mph</code>"
     },
     "relativeDuration": {
         "singular": {
-            "s": "segundo",
-            "m": "minuto",
-            "h": "hora",
-            "d": "dia",
-            "w": "semana",
-            "M": "mês"
+            "s": "second",
+            "m": "minute",
+            "h": "hour",
+            "d": "day",
+            "w": "week",
+            "M": "mouth"
         },
         "plural": {
-            "s": "segundos",
-            "m": "minutos",
-            "h": "horas",
-            "d": "dias",
-            "w": "semanas",
-            "M": "meses"
+            "s": "seconds",
+            "m": "minute",
+            "h": "hours",
+            "d": "days",
+            "w": "weeks",
+            "M": "mounths"
         }
     }
 }

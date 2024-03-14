@@ -16,10 +16,10 @@
     },
     "weather": {
         "no-location": "<b>Please provide a location to get the weather.</b>",
-        "no-valid-location": "<b>Location not found!</b>",
-        "lang": "en",
-        "unit": "e",
-        "result": "<b>%s</b>:\n\n<b><i>📍 Location Info:</i></b>\n<b>Latitude:</b> <code>%.3f</code>\n<b>Longitude:</b> <code>%.3f</code>\n\n<b><i>%s Weather — %s:</i></b>\n<b>Temperature:</b> <code>%.0f °F</code>\n<b>Thermal sensation:</b> <code>%.0f °F</code>\n<b>Air umidity:</b> <code>%.0f %%</code>\n<b>Wind:</b> <code>%.0f mph</code>"
+        "no-valid-location": "¡<b>Ubicación no encontrada!</b>",
+        "lang": "es",
+        "unit": "m",
+        "result": "<b>%s</b>:\n\n<b><i>📍 Location Info:</i></b>\n<b>Latitude:</b> <code>%.3f</code>\n<b>Longitude:</b> <code>%.3f</code>\n\n<b><i>%s Weather — %s:</i></b>\n<b>Temperature:</b> <code>%.0f °C</code>\n<b>Thermal sensation:</b> <code>%.0f °C</code>\n<b>Air umidity:</b> <code>%.0f %%</code>\n<b>Wind:</b> <code>%.0f km/h</code>"
     },
     "relativeDuration": {
         "singular": {

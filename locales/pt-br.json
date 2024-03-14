@@ -1,12 +1,12 @@
 {
-    "start_message_private": "Hello <b>%s</b> — I'm <b>%s</b>, a bot with some useful and fun commands for you.\n\n<b>SourceCode:</b> <a href='github.com/BubbalooTeam/PyCoala'>GitHub</a>",
-    "start_message_group": "Hello, I'm <b>%s</b>\nI have a lot of cool features. To find out more, click on the button below and start a conversation with me.",
-    "start_button": "Start a chat",
+    "start_message_private": "Olá, <b>%s</b> — Sou <b>%s</b>, um bot com alguns comandos úteis e divertidos para você.\n\n<b>Código-Fonte:</b> <a href='github.com/BubbalooTeam/PyCoala'>GitHub</a>",
+    "start_message_group": "Olá, eu sou <b>%s</b>\nEu tenho muitas características legais. Para descobrir mais, clique no botão abaixo e inicie uma conversa comigo.",
+    "start_button": "Iniciar um chat",
     "bot-utils": {
-        "errors": "<b>Unable to %s:</b> <code>%s</code>"
+        "errors": "<b>Impossível %s:</b> <code>%s</code>"
     },
     "btns": {
-        "help-btn": "❔ Help"
+        "help-btn": "❔ Ajuda"
     },
     "afk": {
         "now-unavailable": "<b>%s</b> is now unavailable!",

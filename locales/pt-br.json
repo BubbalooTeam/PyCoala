@@ -11,32 +11,32 @@
     "afk": {
         "now-unavailable": "<b>%s</b> is now unavailable!",
         "unavailable": "<b><a href='tg://user?id=%d'>%s</a></b> is <b>unavailable!</b>\nLast seen <code>%s</code> ago",
-        "reason": "\n<b>Reason:</b> %s",
+        "reason": "\n<b>Motivo:</b> %s",
         "now-available": "<b><a href='tg://user?id=%d'>%s</a></b> is back after <code>%s</code> away."
     },
     "weather": {
         "no-location": "<b>Please provide a location to get the weather.</b>",
-        "no-valid-location": "<b>Location not found!</b>",
-        "lang": "en",
-        "unit": "e",
-        "result": "<b>%s</b>:\n\n<b><i>📍 Location Info:</i></b>\n<b>Latitude:</b> <code>%.3f</code>\n<b>Longitude:</b> <code>%.3f</code>\n\n<b><i>%s Weather — %s:</i></b>\n<b>Temperature:</b> <code>%.0f °F</code>\n<b>Thermal sensation:</b> <code>%.0f °F</code>\n<b>Air umidity:</b> <code>%.0f %%</code>\n<b>Wind:</b> <code>%.0f mph</code>"
+        "no-valid-location": "<b>Local não encontrado!</b>",
+        "lang": "pt",
+        "unit": "m",
+        "result": "<b>%s</b>:\n\n<b><i>📍 Informações Locais:</i></b>\n<b>Latitude:</b> <code>%.3f</code>\n<b>Longitude:</b> <code>%.3f</code>\n\n<b><i>%s Clima — %s:</i></b>\n<b>Temperatura:</b> <code>%.0f °C</code>\n<b>Sensação térmica:</b> <code>%.0f °C</code>\n<b>Umidade no ar:</b> <code>%.0f %%</code>\n<b>Vento:</b> <code>%.0f km/h</code>"
     },
     "relativeDuration": {
         "singular": {
-            "s": "second",
-            "m": "minute",
-            "h": "hour",
-            "d": "day",
-            "w": "week",
-            "M": "mouth"
+            "s": "segundo",
+            "m": "minuto",
+            "h": "hora",
+            "d": "dia",
+            "w": "semana",
+            "M": "mês"
         },
         "plural": {
-            "s": "seconds",
-            "m": "minute",
-            "h": "hours",
-            "d": "days",
-            "w": "weeks",
-            "M": "mounths"
+            "s": "segundos",
+            "m": "minuto",
+            "h": "horas",
+            "d": "dias",
+            "w": "semanas",
+            "M": "meses"
         }
     }
 }

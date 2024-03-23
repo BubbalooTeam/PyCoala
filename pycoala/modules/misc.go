@@ -77,7 +77,7 @@ func WeatherModule(bot *telego.Bot, update telego.Update) {
 	args := update.Message.Text
 	i18n := localization.Get(update.Message.Chat)
 
-	if len(args) < 9 {
+	if len(args) < 8 {
 		bot.SendMessage(&telego.SendMessageParams{
 			ChatID:    chatID,
 			Text:      i18n("weather.no-location"),

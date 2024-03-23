@@ -29,5 +29,6 @@ func (h *Handler) RegisterHandlers() {
 	h.bh.Handle(modules.PingModule, th.CommandEqual("ping"))
 	h.bh.HandleMessage(modules.MediaDownloader, th.TextMatches(regexp.MustCompile(`(?:htt.*?//)?(:?.*)?(?:instagram|twitter|x|tiktok|threads)\.(?:com|net)\/(?:\S*)`)))
 	h.bh.Handle(modules.WeatherModule, th.CommandEqual("weather"))
+	h.bh.Handle(modules.DeviceInfo, th.CommandEqual("specs"))
 	h.bh.Handle(modules.Start, th.CommandEqual("start"))
 }

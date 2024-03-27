@@ -13,6 +13,7 @@ var (
 	DatabaseFile  string
 	WebhookURL    string
 	SOCKS5URL     string
+	GSMArenaAPI   string
 )
 
 // init initializes the config variables.
@@ -34,4 +35,5 @@ func init() {
 
 	WebhookURL = os.Getenv("WEBHOOK_URL")
 	SOCKS5URL = os.Getenv("SOCKS5URL")
+	GSMArenaAPI = os.Getenv("GSMARENA_API")
 }

@@ -22,7 +22,7 @@ func DeviceInfo(bot *telego.Bot, update telego.Update) {
 	var cdevices_Data map[string]interface{}
 	json.Unmarshal(body_cdevices, &cdevices_Data)
 	// Initializate a checks.
-	if len(args) < 6 {
+	if len(args) < 7 {
 		bot.SendMessage(&telego.SendMessageParams{
 			ChatID:    ChatID,
 			Text:      "<b>Device not specified!</b>",
@@ -32,7 +32,7 @@ func DeviceInfo(bot *telego.Bot, update telego.Update) {
 		return
 	}
 
-	device := args[6:]
+	device := args[7:]
 
 	bot.SendMessage(&telego.SendMessageParams{
 		ChatID:    ChatID,
